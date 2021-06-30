@@ -13,7 +13,7 @@ function _isTestnet() {
     const testnet =
         "39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447"; // just for the record
     const mainnet =
-        "4018d7844c78f6a6c41c6a552b898022310fc5dec06da467ee7905a8dad512c8";
+        "637a5b855339ac099cddaa3ea275ad4b793696e86accf4c45ebb9d08ae620ba2";
 
     // treat every other chain as testnet
     return Apis.instance().chain_id !== mainnet;
@@ -32,7 +32,7 @@ export function getWalletName() {
  * @returns {string}
  */
 export function getWalletURL() {
-    return "https://wallet.bitshares.org";
+    return "https://we25.mybot.tw";
 }
 
 /**
@@ -42,7 +42,7 @@ export function getWalletURL() {
  */
 export function getFaucet() {
     return {
-        url: "https://faucet.bitshares.eu/onboarding", // 2017-12-infrastructure worker proposal
+        url: "http://we25.mybot.tw:3000", // 2017-12-infrastructure worker proposal
         show: true,
         editable: false,
         referrer: "onboarding.bitshares.foundation"
